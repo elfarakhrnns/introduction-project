@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #fff1c5;
+    }
+    h1 {
+      color: #9b5d73;
+      font-family: "Gill Sans";
+      text-align: center;
+    }
+    img {
+      border-radius: 20px;
+      display: block;
+      margin: auto;
+    }
+    p {
+      color: #b0757c;
+      font-family: "Gill Sans";
+      font-weight: 400;
+      font-size: 20px;
+      margin: auto;
+      padding: 20px 60px;
+      text-align: center;
+    }
+    button {
+      background: #9b5d73;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      display: block;
+      font-size: medium;
+      margin: auto;
+      padding: 10px 20px;
+    }
+    button:hover {
+      background: #c38b8b;
+      color: black;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+    }
+    .info {
+      color: #b0757c;
+      font-size: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer {
+      font-size: 13px;
+    }
+    .project {
+      background-color: bisque;
+      box-shadow: grey 8px 8px 0px;
+      border-radius: 10px;
+      display: block;
+      padding: 30px;
+      margin: 30px auto;
+      width: 60%;
+    }
+  </style>
+  <body>
+    <div class="project">
+      <h1>Neatly rolled like a <i>CINNAMON ROLL!</i></h1>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/600/original/soft-cinnamon-rolls.jpg?1688109824"
+        width="300"
+      />
+      <p>
+        A cinnamon roll also known as cinnamon bun, cinnamon swirl, cinnamon
+        Danish, and cinnamon snail. <br />
+        It is a sweet roll commonly served in Northern Europe and North America.
+        <br />
+        A cinnamon roll consist of a rolled sheet of yeast-leavened dough onto
+        which a cinnamon and sugar mixture is sprinkled over a thin coat of
+        butter. <br />
+        The dough is then rolled, cut into individual portions and baked.
+      </p>
+      <p class="info">
+        <a href="https://en.wikipedia.org/wiki/Cinnamon_roll" target="_blank">
+          Learn more about Cinnamon Roll.</a
+        >
+      </p>
+      <button>🍪 Get in touch with us! 🍪</button>
+      <br />
+      <p class="footer">Coded by <strong>Elfara Khairunnisa</strong></p>
+    </div>
+  </body>
+  <script>
+    function getRecipe() {
+      let name = prompt("Hello, what is your name?");
+      let age = prompt("How old are you?");
+
+      if (age >= 16) {
+        let email = prompt("What is your email?");
+        alert("Thank you " + name + ", we will get in touch with you soon!");
+      } else {
+        alert("Sorry, " + name + " you cannot register with us!");
+      }
+    }
+    let recipeButton = document.querySelector("button");
+    recipeButton.addEventListener("click", getRecipe);
+  </script>
+</html>
